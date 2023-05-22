@@ -1,3 +1,4 @@
 testdata/rust-sum/target
 *.so
 *.wasm
+*.hashiplug

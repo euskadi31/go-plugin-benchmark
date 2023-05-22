@@ -9,11 +9,13 @@ goos: darwin
 goarch: amd64
 pkg: github.com/euskadi31/go-plugin-benchmark
 cpu: Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
-BenchmarkGoPlugin-8             610472167                2.106 ns/op           0 B/op          0 allocs/op
-BenchmarkWasmerRustSum-8          325718                 3560 ns/op          208 B/op         12 allocs/op
-BenchmarkWasmerGoSum-8            339010                 3545 ns/op          208 B/op         12 allocs/op
-BenchmarkWazeroRustSum-8        13045299                79.12 ns/op           24 B/op          2 allocs/op
-BenchmarkWazeroGoSum-8          12553725                82.37 ns/op           24 B/op          2 allocs/op
+BenchmarkGoNativePlugin-8      754253935	     1.628 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHashicorpPlugin-8   	   19508	     64092 ns/op	     584 B/op	      15 allocs/op
+BenchmarkWasmerRustSum-8     	  332524	      3808 ns/op	     208 B/op	      12 allocs/op
+BenchmarkWasmerGoSum-8       	  293564	      3584 ns/op	     208 B/op	      12 allocs/op
+BenchmarkWazeroRustSum-8     	12958280	     86.12 ns/op	      24 B/op	       2 allocs/op
+BenchmarkWazeroGoSum-8       	11966158	     87.66 ns/op	      24 B/op	       2 allocs/op
 PASS
-ok      github.com/euskadi31/go-plugin-benchmark        7.562s
+coverage: [no statements]
+ok  	github.com/euskadi31/go-plugin-benchmark	8.531s
 ```

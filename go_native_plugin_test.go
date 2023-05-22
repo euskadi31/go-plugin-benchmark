@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func BenchmarkGoPlugin(b *testing.B) {
+func BenchmarkGoNativePlugin(b *testing.B) {
 	plug, err := plugin.Open("./testdata/goplugin/sum.so")
 	assert.NoError(b, err)
 
